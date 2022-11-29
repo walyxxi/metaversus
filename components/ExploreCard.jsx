@@ -13,6 +13,7 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
     onClick={() => handleClick(id)}
   >
     <img
+      loading="lazy"
       src={imgUrl}
       alt={title}
       className="absolute w-full h-full object-cover rounded-[24px]"
@@ -27,6 +28,7 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
           className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
         >
           <img
+            loading="lazy"
             src="/headset.svg"
             alt="headset"
             className="w-1/2 h-1/2 object-contain"

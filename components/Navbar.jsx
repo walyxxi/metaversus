@@ -16,6 +16,7 @@ const Navbar = () => (
       className={`${styles.innerWidth} mx-auto flex items-center justify-between gap-8`}
     >
       <img
+        loading="lazy"
         src="/search.svg"
         alt="search"
         className="w-[24px] h-[24px] object-contain"
@@ -24,6 +25,7 @@ const Navbar = () => (
         METAVERSUS
       </h2>
       <img
+        loading="lazy"
         src="/menu.svg"
         alt="menu"
         className="w-[24px] h-[24px] object-contain"

@@ -24,15 +24,23 @@ const World = () => (
         variants={fadeIn("up", "tween", 0.3, 1)}
         className="relative mt-[68px] flex w-full"
       >
-        <img src="/map.png" alt="map" className="w-full h-full object-cover" />
+        <img
+          loading="lazy" src="/map.png" alt="map" className="w-full h-full object-cover"
+        />
         <div className="absolute shadow-lg shadow-gray-400 bottom-20 right-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
-          <img src="/people-01.png" alt="people" className="w-full h-full" />
+          <img
+            loading="lazy" src="/people-01.png" alt="people" className="w-full h-full"
+          />
         </div>
         <div className="absolute shadow-lg shadow-gray-400 top-10 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
-          <img src="/people-02.png" alt="people" className="w-full h-full" />
+          <img
+            loading="lazy" src="/people-02.png" alt="people" className="w-full h-full"
+          />
         </div>
         <div className="absolute shadow-lg shadow-gray-400 top-1/2 right-1/2 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
-          <img src="/people-03.png" alt="people" className="w-full h-full" />
+          <img
+            loading="lazy" src="/people-03.png" alt="people" className="w-full h-full"
+          />
         </div>
       </motion.div>
     </motion.div>

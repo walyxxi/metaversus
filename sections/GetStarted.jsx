@@ -24,6 +24,7 @@ const GetStarted = () => (
         className={classNames(styles.flexCenter, "flex-1")}
       >
         <img
+          loading="lazy"
           src="/get-started.png"
           alt="get-started"
           className="w-[90%] h-[90%] object-contain"

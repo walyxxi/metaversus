@@ -36,6 +36,7 @@ const WhatsNew = () => (
         className={classNames(styles.flexCenter, "flex-1")}
       >
         <img
+          loading="lazy"
           src="/whats-new.png"
           alt="whats-new"
           className="w-[90%] h-[90%] object-contain"
