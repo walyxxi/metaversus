@@ -16,12 +16,12 @@ const GetStarted = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={classNames(
         styles.innerWidth,
-        "mx-auto flex lg:flex-row gap-8",
+        "mx-auto flex flex-col md:flex-row gap-8"
       )}
     >
       <motion.div
         variants={planetVariants("left")}
-        className={classNames(styles.flexCenter, "flex-1")}
+        className={classNames(styles.flexCenter, "flex-1 hidden md:flex")}
       >
         <img
           loading="lazy"

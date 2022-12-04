@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { motion } from "framer-motion";
 import styles from "../styles";
@@ -16,7 +16,7 @@ const WhatsNew = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={classNames(
         styles.innerWidth,
-        "mx-auto flex lg:flex-row gap-8",
+        "mx-auto flex flex-col lg:flex-row gap-8"
       )}
     >
       <motion.div
@@ -33,7 +33,7 @@ const WhatsNew = () => (
       </motion.div>
       <motion.div
         variants={planetVariants("right")}
-        className={classNames(styles.flexCenter, "flex-1")}
+        className={classNames(styles.flexCenter, "flex-1 hidden lg:flex")}
       >
         <img
           loading="lazy"
