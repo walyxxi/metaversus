@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import styles from "../styles";
 import { fadeIn, staggerContainer, planetVariants } from "../utils/motion";
 import { StartSteps, TitleText, TypingText } from "../components";
@@ -23,10 +24,12 @@ const GetStarted = () => (
         variants={planetVariants("left")}
         className={classNames(styles.flexCenter, "flex-1 hidden md:flex")}
       >
-        <img
-          loading="lazy"
+        <Image
           src="/get-started.png"
           alt="get-started"
+          width={0}
+          height={0}
+          sizes="100vw"
           className="w-[90%] h-[90%] object-contain"
         />
       </motion.div>
