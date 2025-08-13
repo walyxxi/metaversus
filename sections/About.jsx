@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { TypingText } from "../components";
 import styles from "../styles";
 import { fadeIn, staggerContainer } from "../utils/motion";
@@ -34,12 +35,15 @@ const About = () => (
         <span className="font-extrabold text-white">explore</span> the madness
         of the metaverse by scrolling down
       </motion.p>
-      <motion.img
-        variants={fadeIn("up", "tween", 0, 3, 1)}
-        src="/arrow-down.svg"
-        alt="arrow-down"
-        className="w-[18px] h-[28px] object-contain mt-[28px]"
-      />
+      <motion.div variants={fadeIn("up", "tween", 0, 3)} className="mt-[28px]">
+        <Image
+          src="/arrow-down.svg"
+          alt="arrow-down"
+          width={18}
+          height={28}
+          className="object-contain"
+        />
+      </motion.div>
     </motion.div>
   </section>
 );

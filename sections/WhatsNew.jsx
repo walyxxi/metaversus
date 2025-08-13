@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import styles from "../styles";
 import { fadeIn, staggerContainer, planetVariants } from "../utils/motion";
 import { NewFeatures, TitleText, TypingText } from "../components";
@@ -35,10 +36,12 @@ const WhatsNew = () => (
         variants={planetVariants("right")}
         className={classNames(styles.flexCenter, "flex-1 hidden lg:flex")}
       >
-        <img
-          loading="lazy"
+        <Image
           src="/whats-new.png"
           alt="whats-new"
+          width={0}
+          height={0}
+          sizes="100vw"
           className="w-[90%] h-[90%] object-contain"
         />
       </motion.div>

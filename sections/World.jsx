@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import styles from "../styles";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import { TitleText, TypingText } from "../components";
@@ -24,33 +25,38 @@ const World = () => (
         variants={fadeIn("up", "tween", 0.3, 1)}
         className="relative mt-[68px] flex w-full"
       >
-        <img
-          loading="lazy"
+        <Image
           src="/map.png"
           alt="map"
+          width={0}
+          height={0}
+          sizes="100vw"
           className="w-full h-full object-cover"
         />
         <div className="absolute shadow-lg shadow-gray-400 bottom-20 right-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
-          <img
-            loading="lazy"
+          <Image
             src="/people-01.png"
             alt="people"
+            width={70}
+            height={70}
             className="w-full h-full"
           />
         </div>
         <div className="absolute shadow-lg shadow-gray-400 top-10 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
-          <img
-            loading="lazy"
+          <Image
             src="/people-02.png"
             alt="people"
+            width={70}
+            height={70}
             className="w-full h-full"
           />
         </div>
         <div className="absolute shadow-lg shadow-gray-400 top-1/2 right-1/2 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
-          <img
-            loading="lazy"
+          <Image
             src="/people-03.png"
             alt="people"
+            width={70}
+            height={70}
             className="w-full h-full"
           />
         </div>
